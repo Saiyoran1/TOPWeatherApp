@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class='container'>
+        <h1>Check the Weather!</h1>
+        <form>
+            <fieldset>
+                <label for="location">Location:</label>
+                <input type="text" name="location" class="location-input">
+            </fieldset>
+            <fieldset>
+                <label for="faren">Farenheit?</label>
+                <input type="checkbox" name="faren" class="unit-selector">
+            </fieldset>
+            <button type="submit" class="submit-button">Search!</button>
+        </form>
+        <div class="result">
+            <h2>The weather in:</h2>
+            <h3 id="city-name"></h3>
+            <h2>is:</h2>
+            <h3 id="weather"></h3>
+            <h2>with a temperature of: </h2>
+            <h3 id="temperature"></h3>
+            <h3 id="units"></h3>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
